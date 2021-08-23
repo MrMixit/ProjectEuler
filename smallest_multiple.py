@@ -9,7 +9,7 @@
 
 import math
 minimum = 1
-for i in range(1,21): # For each number, only multiply our minimum 
+for i in range(1,21): # For each number, only multiply our smallest multiple with the factors not already included from the new number
     minimum = int(i)*int(minimum)/math.gcd(int(i),int(minimum))
     
 print(minimum)
